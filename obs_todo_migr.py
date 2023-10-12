@@ -25,7 +25,7 @@ if len(files) >= 2:
     with open(daily_notes_dir+"/"+prevfile, 'r') as f:
         lines = f.readlines()
         for line in lines:
-            if '***Today***' in line:
+            if '##### *Today*' in line:
                 start_reading = True
                 continue
             if start_reading and line.strip() is "":
